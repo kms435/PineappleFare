@@ -1,0 +1,70 @@
+<html>
+<head>
+        <meta charset = 'utf-8'>
+        <script type = "text/javascript" src = "jquery-3.1.1.min.js"></script>    
+        <script type = "text/javascript" src = "content.js"></script>
+        <script type = "text/javascript" src = "popupscript.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/popup.css">
+        <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+</head>
+<body>
+        <div id = "content">
+        <div id = "introduction">Howdy, traveler! How will you be traveling? Answer a few
+                questions, and let us help you find the right flight.</div>
+
+        <br> 
+
+        <div id = "submitForm">
+        <form name = "parameters">
+                
+                <p>1) Number of checked bags: </p>
+                <!-- <select name = "checkedBags" id = "checkedBags">
+                        <option class = "dropOp" value = "0"> 0 </option>
+                        <option class = "dropOp" value = "1"> 1 </option>
+                        <option class = "dropOp" value = "2"> 2 </option>
+                        <option class = "dropOp" value = "3"> 3 </option>
+                        <option class = "dropOp" value = "4"> 4 </option>
+                        <option class = "dropOp" value = "5"> 5 </option>
+                        <option class = "dropOp" value = "6"> 6 </option>
+                        <option class = "dropOp" value = "7"> 7 </option>
+                        <option class = "dropOp" value = "8"> 8 </option>
+                        <option class = "dropOp" value = "9"> 9 </option>
+                        <option class = "dropOp" value = "10"> 10 </option>
+                </select> -->
+
+                <div id="slidecontainer">
+                        <input type="range" min="0" max="10" value="0" class="slider" id="checkedBags">
+                        Value: <span id="sliderResult"></span>
+                </div>
+
+                <br> 
+                
+                2) Do you have a carry-on bag?:
+                <div class = "checkBoxTwo">
+                        <input type = "checkbox" value = "1" id = "checkboxTwoInput" name = ""/>
+                        <label for="checkboxTwoInput"</label>
+                </div>
+                <!-- <select name = "carryonBags" id = "carryonBags">
+                        <option class = "dropOp" value = "0"> 0 </option>
+                        <option class = "dropOp" value = "1"> 1 </option>
+                </select>
+                <br> <br> -->
+                
+                <div id = "question3">
+                        3) Will you possibly be cancelling/changing your flight?
+                </div>
+                <div class = "checkBoxThree">
+                        <input type = "checkbox" value = "1" id = "checkboxThreeInput" name = ""/>
+                        <label for="checkboxThreeInput"</label>
+                </div>
+
+                <!--<input type = "checkbox" name = "cancellation" id = "cancellations"> -->
+                
+                <br> <br>
+                
+                <input id="submitPrefs" type = "submit" value = "Show me the results!">
+        </form>
+        </div>
+</div>
+</body>
+</html>

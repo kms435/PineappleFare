@@ -1,0 +1,44 @@
+{
+	"manifest_version": 2,
+    "name": "PineappleFare",
+    "description": "Show true airplane fares with hidden fees on Kayak.",
+    "version": "1.0",
+    "background":{
+        "scripts":[
+            "jquery-3.1.1.min.js",
+            "popupscript.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "jquery-3.1.1.min.js",
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "storage",
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon.png"
+        }
+    },
+    "web_accessible_resources": [
+      "images/*.png",
+      "images/*.jpg"
+    ]
+}
+

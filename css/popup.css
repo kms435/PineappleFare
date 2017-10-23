@@ -1,0 +1,214 @@
+
+
+body {
+    min-width: 400px;
+    background-image: url("../images/pineapplebg.png");
+    background-size: cover;
+}
+
+#content {
+    padding-bottom: 50px;
+    border-radius: 10px;
+    font-family: 'Pompiere', cursive;
+    font-size: 160%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #575457;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #FFFF4C;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFFF4C;
+    cursor: pointer;
+}
+#checkedBags {
+    font-family: 'Pompiere', cursive;
+    font-size: 110%;
+}
+
+#carryonBags {
+    font-family: 'Pompiere', cursive;
+    font-size: 110%;
+}
+
+
+.checkboxThree {
+	width: 120px;
+	height: 40px;
+	background: #575457;
+	margin: 20px 60px;
+
+	border-radius: 50px;
+	position: relative;
+}
+
+/**
+ * Create the text for the On position
+ */
+ .checkboxThree:before {
+	content: 'Yes';
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	height: 2px;
+	color: #FFFF4C;
+	font-size: 16px;
+}
+
+/**
+ * Create the label for the off position
+ */
+ .checkboxThree:after {
+	content: 'No';
+	position: absolute;
+	top: 12px;
+	left: 84px;
+	height: 2px;
+	color: #FFFF4C;
+	font-size: 16px;
+}
+
+/**
+ * Create the pill to click
+ */
+ .checkboxThree label {
+	display: block;
+	width: 52px;
+	height: 22px;
+	border-radius: 50px;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 12px;
+	background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+ .checkboxThree input[type=checkbox]:checked + label {
+	left: 60px;
+    background: #FFFF4C;
+    float: right;
+}
+
+#checkboxThreeInput {
+    visibility:hidden;
+}
+
+
+.checkboxTwo {
+	width: 120px;
+	height: 40px;
+	background: #575457;
+	margin: 20px 60px;
+
+	border-radius: 50px;
+	position: relative;
+}
+
+/**
+ * Create the text for the On position
+ */
+ .checkboxTwo:before {
+	content: 'Yes';
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	height: 2px;
+	color: #FFFF4C;
+	font-size: 16px;
+}
+
+/**
+ * Create the label for the off position
+ */
+ .checkboxTwo:after {
+	content: 'No';
+	position: absolute;
+	top: 12px;
+	left: 84px;
+	height: 2px;
+	color: #FFFF4C;
+	font-size: 16px;
+}
+
+/**
+ * Create the pill to click
+ */
+ .checkboxTwo label {
+	display: block;
+	width: 52px;
+	height: 22px;
+	border-radius: 50px;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 12px;
+	background: #ddd;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+ .checkboxTwo input[type=checkbox]:checked + label {
+	left: 60px;
+    background: #FFFF4C;
+    float: right;
+}
+
+#checkboxTwoInput {
+    visibility:hidden;
+}
+
+#submitPrefs{
+	border : solid 4px #ffffff;
+	border-radius : 6px;
+	moz-border-radius : 6px;
+	-webkit-box-shadow : 0px 0px 11px rgba(0,0,0,0.2);
+	-moz-box-shadow : 0px 0px 11px rgba(0,0,0,0.2);
+    box-shadow : 0px 0px 11px rgba(0,0,0,0.2);
+    font-family : Pompiere, cursive;
+	font-size : 20px;
+	color : #ffff4c;
+	padding : 5px 15px;
+    background-color : #575457;
+    margin-left: 40px;
+
+}
+
+#submitForm {
+    margin-left: 50px;
+}
+
+#introduction {
+    margin-left: 50px;
+    padding-top: 15px;  
+}
